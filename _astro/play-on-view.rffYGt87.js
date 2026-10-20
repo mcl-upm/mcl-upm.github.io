@@ -1,0 +1,1 @@
+var e=new IntersectionObserver(t=>{for(let n of t)n.isIntersecting&&(n.target.classList.add(`is-playing`),e.unobserve(n.target))},{threshold:0,rootMargin:`0px 0px -12% 0px`});document.querySelectorAll(`[data-play],[data-reveal]`).forEach(t=>e.observe(t));
